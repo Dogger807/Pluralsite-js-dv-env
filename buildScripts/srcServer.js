@@ -3,7 +3,7 @@ var path = require('path');
 var open = require('open');
 
 var port = 3000
-var app = epress();
+var app = express();
 
 app.get('/', function(reg,res){
   res.sendFile(path.join(__dirname,'../src/index.html'));
@@ -14,6 +14,5 @@ app.listen(port,function(err){
     console.log(err);
   } else {
     open('http://localhost:' + port);
-  }
   }
 })
