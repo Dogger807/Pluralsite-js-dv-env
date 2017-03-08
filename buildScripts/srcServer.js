@@ -17,7 +17,16 @@ app.use(require('webpack-dev-middleware')(compiler,{
 
 app.get('/', function(reg,res){
   res.sendFile(path.join(__dirname,'../src/index.html'));
-})
+});
+
+app.get('/users', function(req, res) {
+  // Hard coding for simplicity. Pretend this hits a real database
+  res.json([
+    {"id": 1,"firstName":"Bob","lastName":"Smith","email":"bob@gmail.com"},
+    {"id": 2,"firstName":"Tammy","lastName":"Norton","email":"tNorton@aol.com"},
+    {"id": 3,"firstName":"Tina","lastName":"Lee","email":"rabidBitch@hotmail.com"}
+  ]);
+});
 
 app.listen(port,function(err){
   if (err) {
