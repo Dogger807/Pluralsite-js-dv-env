@@ -8,7 +8,7 @@ const schema = {
       "items": {
         "type": "object",
         "properties": {
-          "id": {
+          "id2": {
             "type": "number",
             "unique": true,
             "minimum": 1
@@ -26,7 +26,7 @@ const schema = {
             "faker": "internet.email",
           }
         },
-        required: ['id', 'firstName', 'lastName', 'email']
+        required: ['id2', 'firstName', 'lastName', 'email']
       }
     }
   },
