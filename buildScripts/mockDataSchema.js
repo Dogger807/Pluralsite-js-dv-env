@@ -11,8 +11,8 @@ export const schema = {
           "id": {
             "type": "number",
             "unique": true,
-            "minimum": 4,
-            "maximum": 6
+            "minimum": 100000,
+            "maximum": 999999
           },
           "firstName": {
             "type": "string",
