@@ -1,4 +1,4 @@
-const schema = {
+export const schema = {
   "type": "object",
   "properties": {
     "users": {
@@ -8,10 +8,11 @@ const schema = {
       "items": {
         "type": "object",
         "properties": {
-          "id2": {
+          "id": {
             "type": "number",
             "unique": true,
-            "minimum": 1
+            "minimum": 4,
+            "maximum": 6
           },
           "firstName": {
             "type": "string",
@@ -26,11 +27,9 @@ const schema = {
             "faker": "internet.email",
           }
         },
-        required: ['id2', 'firstName', 'lastName', 'email']
+        required: ['id', 'firstName', 'lastName', 'email']
       }
     }
   },
   required: ['users']
 };
-
-module.exports.default = schema;
