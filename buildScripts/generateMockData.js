@@ -15,6 +15,7 @@ let mySchema = jsf(mockDataSchema);
 
 delete mySchema.id;
 
+var json = JSON.stringify(mySchema);
 json = json.substring(10)
 json = json.slice(0,-1);
 
