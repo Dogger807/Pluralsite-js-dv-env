@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
   debug: true,
@@ -15,11 +16,29 @@ export default {
     filename: 'bundle.js'
   },
   plugins: [
+    //Create Html file that includes reference to bundled JS.
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash : true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      },
+      inject: true
+    }),
+
     // Eliminate duplicate packages when generating bundle
     new webpack.optimize.DedupePlugin(),
 
    // Minify js
-   new webpack.optimize.UglifyJsPlugin() 
+   new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
     loaders: [

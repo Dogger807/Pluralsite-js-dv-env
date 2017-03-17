@@ -1,6 +1,6 @@
 /*eslint-disable no-console */
 import webpack from 'webpack';
-import webpackConfig from '../webpacjk.config.prod';
+import webpackConfig from '../webpack.config.prod';
 import chalk from 'chalk';
 
 process.env.NODE_ENV = 'production';
@@ -24,10 +24,10 @@ webpack(webpackConfig).run((err, stats) => {
     jsonStats.warning.map(warning => console.log(chalk.yellow(warning)));
   }
 
-  console.log('Webpack stats: ${stats}');
+  console.log(`Webpack stats: ${stats}`);
 
   // if we got this far, the build succeeded.  PARTY TIME!!!!!
   console.log(chalk.green('Your app has been built for production and written to /dist!!'));
-  
+
   return 0;
 });
