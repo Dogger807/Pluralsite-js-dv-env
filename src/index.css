@@ -5,34 +5,36 @@ body {
   font-size: 12pt;
 }
 
+.deleteUser {
+  -webkit-text-fill-color: darkblue;
+  font-weight: bold
+}
+
 table{
   -moz-box-align: center;
   text-align: center;
   border: 10px;
   border-style: ridge;
   width: 65%;
-  border-color: sienna;
+  border-color: tomato;
   max-width: 70%;
   min-width: 20%
 }
 
 table th {
-  -webkit-box-align: center;
   border: 1;
-  -webkit-text-fill-color: orangered;
+  background-color: maroon;
+  -webkit-text-fill-color: orange;
   padding: 10px
 }
 
 tbody {
-  -webkit-text-fill-color: darkblue;
-  background-color: lightskyblue
+  -webkit-text-fill-color: lightgoldenrodyellow;
+  background-color: mediumvioletred
 }
 
 h1 {
   font-family: Georgia;
-  -webkit-text-fill-color: lemonchiffon
+  -webkit-text-fill-color: firebrick
 }
 
-href {
-  -webkit-text-fill-color: blue
-}

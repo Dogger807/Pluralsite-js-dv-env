@@ -1,1 +1,22 @@
-{"users":[{"id":202694,"firstName":"Brenden","lastName":"Stark","email":"Kenya_Purdy@yahoo.com"},{"id":161238,"firstName":"Mariano","lastName":"Thiel","email":"Gennaro50@yahoo.com"},{"id":204419,"firstName":"Rosie","lastName":"Schulist","email":"Erling.Kertzmann90@gmail.com"},{"id":776797,"firstName":"Rosa","lastName":"Luettgen","email":"Rita.Gleason65@hotmail.com"}]}
+{
+  "users": [
+    {
+      "id": 202694,
+      "firstName": "Brenden",
+      "lastName": "Stark",
+      "email": "Kenya_Purdy@yahoo.com"
+    },
+    {
+      "id": 161238,
+      "firstName": "Mariano",
+      "lastName": "Thiel",
+      "email": "Gennaro50@yahoo.com"
+    },
+    {
+      "id": 204419,
+      "firstName": "Rosie",
+      "lastName": "Schulist",
+      "email": "Erling.Kertzmann90@gmail.com"
+    }
+  ]
+}
