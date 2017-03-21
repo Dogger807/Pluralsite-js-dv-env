@@ -1,8 +1,38 @@
 body {
+  padding: 15px;
+  background-color: slategray;
   font-family: Verdana;
   font-size: 12pt;
 }
 
+table{
+  -moz-box-align: center;
+  text-align: center;
+  border: 10px;
+  border-style: ridge;
+  width: 65%;
+  border-color: sienna;
+  max-width: 70%;
+  min-width: 20%
+}
+
 table th {
-  padding: 5px
+  -webkit-box-align: center;
+  border: 1;
+  -webkit-text-fill-color: orangered;
+  padding: 10px
+}
+
+tbody {
+  -webkit-text-fill-color: darkblue;
+  background-color: lightskyblue
+}
+
+h1 {
+  font-family: Georgia;
+  -webkit-text-fill-color: lemonchiffon
+}
+
+href {
+  -webkit-text-fill-color: blue
 }
